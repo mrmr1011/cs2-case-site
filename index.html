@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+<meta charset="UTF-8">
+<title>CS2 Case Opening</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>CS2 Case Opening</h1>
+<div class="balance">
+Balance: $<span id="balance">100</span>
+</div>
+</header>
+
+<nav>
+<button onclick="showPage('cases')">Cases</button>
+<button onclick="showPage('upgrade')">Upgrade</button>
+<button onclick="showPage('battle')">Battle</button>
+</nav>
+
+<section id="casesPage">
+<div id="cases" class="cases"></div>
+<div class="roulette-wrapper">
+<div id="pointer"></div>
+<div id="roulette"></div>
+</div>
+</section>
+
+<section id="upgradePage" class="hidden">
+<h2>Upgrade</h2>
+<div id="upgradeInventory"></div>
+<button onclick="upgrade()">Upgrade 50%</button>
+</section>
+
+<section id="battlePage" class="hidden">
+<h2>Case Battle</h2>
+<button onclick="startBattle()">Battle vs Bot</button>
+<div id="battleResult"></div>
+</section>
+
+<h2>Inventory</h2>
+<div id="inventory"></div>
+
+<script src="cases.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
